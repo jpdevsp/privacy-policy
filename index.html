@@ -1,18 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><meta charset="UTF-8"><title>Política de Privacidad — Marketplace Tracker</title></head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad — Mis Pedidos - Seguimiento</title>
+  <style>
+    body { font-family: -apple-system, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px; line-height: 1.7; color: #1a1a1a; }
+    h1 { font-size: 24px; font-weight: 600; }
+    h2 { font-size: 18px; font-weight: 600; margin-top: 32px; }
+    p, li { font-size: 15px; }
+    ul { padding-left: 20px; }
+    a { color: #1a56db; }
+    .updated { color: #6b6b6b; font-size: 13px; }
+  </style>
+</head>
 <body>
-<h1>Política de Privacidad — Marketplace Tracker</h1>
-<p>Última actualización: abril 2026</p>
+  <h1>Política de Privacidad</h1>
+  <p class="updated">Última actualización: marzo 2026</p>
 
-<h2>Datos que recopilamos</h2>
-<p>La aplicación accede a la cámara únicamente para escanear códigos de seguimiento. No almacenamos imágenes ni vídeos.</p>
-<p>Usamos Google AdMob para mostrar anuncios, que puede recopilar el ID de publicidad del dispositivo.</p>
+  <p>Mis Pedidos - Seguimiento ("la app", "nosotros") respeta tu privacidad. Esta política explica qué datos se recopilan, cómo se usan y qué derechos tienes.</p>
 
-<h2>Suscripciones</h2>
-<p>Las suscripciones Premium se gestionan a través de Google Play. No almacenamos datos de pago.</p>
+  <h2>1. Datos que recopilamos</h2>
+  <p><strong>Emails de confirmación de pedido.</strong> La app accede a tu Gmail u Outlook con permiso de solo lectura para detectar emails de confirmación de marketplaces (Amazon, AliExpress, Temu, Shein, Miravia, Vinted, eBay). Solo se procesan los emails cuyo remitente corresponde a estos servicios. El contenido de tus emails nunca abandona tu dispositivo.</p>
+  <p><strong>Datos de pedidos.</strong> Los datos extraídos (número de pedido, producto, precio, estado, número de tracking) se almacenan localmente en tu dispositivo usando SQLite. No se envían a ningún servidor.</p>
+  <p><strong>Tokens de acceso OAuth.</strong> Los tokens de Gmail y Outlook se almacenan en el Keystore cifrado de Android (SecureStore). No los almacenamos en servidores.</p>
+  <p><strong>Datos de publicidad.</strong> La app usa Google AdMob para mostrar anuncios. AdMob puede recopilar un identificador de publicidad anónimo y datos de uso de la app para mostrar anuncios relevantes. Puedes gestionar tu preferencia en Ajustes > Google > Anuncios de tu dispositivo Android.</p>
 
-<h2>Contacto</h2>
-<p>Para cualquier consulta: TU_EMAIL@gmail.com</p>
+  <h2>2. Cómo usamos los datos</h2>
+  <ul>
+    <li>Mostrar el estado de tus pedidos y notificarte de cambios</li>
+    <li>Rastrear paquetes consultando webs públicas de transportistas</li>
+    <li>Mostrar anuncios mediante Google AdMob (requiere consentimiento en la UE)</li>
+  </ul>
+
+  <h2>3. Datos que NO recopilamos</h2>
+  <ul>
+    <li>No leemos emails que no sean de los marketplaces listados</li>
+    <li>No enviamos el contenido de tus emails a ningún servidor</li>
+    <li>No creamos perfiles de usuario ni vendemos datos</li>
+    <li>No tenemos acceso a tus contraseñas — solo a un token OAuth revocable</li>
+  </ul>
+
+  <h2>4. Servicios de terceros</h2>
+  <p><strong>Google AdMob:</strong> Mostramos anuncios usando AdMob. Su política de privacidad está en <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+  <p><strong>Supabase:</strong> Usamos Supabase para autenticación (magic link por email) y para funciones de servidor que actúan como proxy de APIs de transportistas. Supabase no recibe datos de tus pedidos ni emails. Su política está en <a href="https://supabase.com/privacy">supabase.com/privacy</a>.</p>
+  <p><strong>Transportistas:</strong> El número de seguimiento se envía a las webs públicas de los transportistas (Correos, SEUR, DHL, etc.) para obtener el estado del paquete. No se envía ningún otro dato personal.</p>
+
+  <h2>5. Tus derechos (RGPD)</h2>
+  <p>Puedes eliminar todos los datos de la app desde Ajustes > Borrar todos los datos. Esto elimina pedidos, cuentas conectadas y tokens de acceso del dispositivo. Para revocar el acceso OAuth a tu email, ve a la configuración de seguridad de tu cuenta de Google o Microsoft.</p>
+
+  <h2>6. Menores</h2>
+  <p>La app no está dirigida a menores de 13 años y no recopilamos conscientemente datos de menores.</p>
+
+  <h2>7. Cambios en esta política</h2>
+  <p>Notificaremos cambios relevantes mediante una notificación en la app. El uso continuado tras los cambios implica aceptación.</p>
+
+  <h2>8. Contacto</h2>
+  <p>Para cualquier consulta sobre privacidad: <a href="mailto:jpdevspain@gmail.com">jpdevspain@gmail.com</a></p>
 </body>
 </html>
